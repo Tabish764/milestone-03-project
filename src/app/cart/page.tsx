@@ -4,7 +4,7 @@ import { CartContext } from "../context/CartContext";
 import Image from "next/image";
 import { toast } from "react-toastify";
 
-const page = () => {
+const Page = () => {
   const { item } = useContext(CartContext);
   const handleClick = () => {
       toast.success('You are broke lil bro', {
@@ -43,4 +43,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
