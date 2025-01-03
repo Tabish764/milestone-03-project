@@ -1,5 +1,6 @@
 "use client";
-import React, { useContext } from "react";
+import React from "react";
+import  { useContext } from "react";
 import { CartContext } from "../context/CartContext";
 import Image from "next/image";
 import { toast } from "react-toastify";
@@ -17,7 +18,7 @@ const Page = () => {
       <h1 className="text-7xl text-center mt-5">Cart</h1>
       {item.length > 0 ?(
         item.map((cart) => (
-          <div className="bg-[#1b1b1b] p-5 m-5 rounded-lg shadow-lg flex-col flex items-center justify-center max-w-[500px]">
+          <div key={cart.id} className="bg-[#1b1b1b] p-5 m-5 rounded-lg shadow-lg flex-col flex items-center justify-center max-w-[500px]">
             <div>
               <Image
                 width={230}
