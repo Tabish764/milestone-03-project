@@ -13,7 +13,7 @@ const Page = () => {
   const fetchData = async () => {
     try {
       setError("");
-      const res = await fetch(`/api/products/${id}`);
+      const res = await fetch(`https://milestone-03-project-sepia.vercel.app/api/products/${id}`);
       console.log('Response:', res);  
       if (!res.ok) {
         throw new Error('Product not found');
