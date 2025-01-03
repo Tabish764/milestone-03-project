@@ -56,7 +56,7 @@ const Page = () => {
           <p>Graphic Card: {data.specs.graphicsCard}</p>
           <p>Motherboard: {data.specs.motherboard}</p>
           <p>Price: {data.price} PKR</p>
-          <Cart/>
+          
          
           </div>
         </div>
